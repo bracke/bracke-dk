@@ -1,0 +1,25 @@
+---
+---
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  	Owner, Designer, Coder: Bent Bracke
+	Contact: bent [at] bracke.dk
+	Twitter: @bentbracke
+	From: Ikast, Denmark
+
+/* THANKS */
+
+	Jekyll/Github team
+
+
+/* SITE */
+  	Last update: {% for post in site.posts limit: 1 %} {{ post.date | date: "%Y-%m-%d" }} {% endfor %}
+	Language: English
+	Doctype: HTML5
+	Standards: HTML5, CSS3
+	Software: Jekyll,BBEdit,Bash
+
+

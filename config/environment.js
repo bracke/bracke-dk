@@ -2,10 +2,11 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'bracke-blog',
+    modulePrefix: "bracke-blog",
     environment,
-    rootURL: '/',
-    locationType: 'auto',
+    rootURL: "/",
+    locationType: "auto",
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -13,14 +14,37 @@ module.exports = function(environment) {
       },
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
-        Date: false
-      }
+        Date: false,
+      },
     },
 
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+
+    blog: {
+      title: "Bracke",
+      description: "The personal blog of Bent Bracke.",
+      coverImage: "/images/blog-cover.jpg",
+
+      navigation: [
+        {
+          label: "Home",
+          route: "index",
+        },
+        {
+          label: "Apps",
+          route: "page",
+          id: "apps",
+        },
+        {
+          label: "Built by Bent Bracke",
+          route: "page",
+          id: "bent-bracke",
+        },
+      ],
+    },
   };
 
   if (environment === 'development') {
@@ -45,6 +69,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
+    ENV.blog.host = "https://bracke.dk";
   }
 
   return ENV;
