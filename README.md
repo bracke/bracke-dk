@@ -1,5 +1,7 @@
 # bracke-blog
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6aeb205a-e29a-48cf-a3ce-ce91deea45c1/deploy-status)](https://app.netlify.com/sites/gracious-hermann-0a47d7/deploys)
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
