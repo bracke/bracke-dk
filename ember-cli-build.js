@@ -17,9 +17,10 @@ module.exports = function(defaults) {
       ],
     },
     fingerprint: {
+      exclude: ["images/blog-cover.jpg"],
       extensions: broccoliAssetRevDefaults.extensions.concat(["webmanifest"]),
       prepend: "https://bracke.dk/",
-    }
+    },
   });
 
   // Use `app.import` to add additional libraries to the generated
