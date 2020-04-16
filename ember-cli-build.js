@@ -1,6 +1,7 @@
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+const broccoliAssetRevDefaults = require("broccoli-asset-rev/lib/default-options");
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
@@ -16,8 +17,9 @@ module.exports = function(defaults) {
       ],
     },
     fingerprint: {
-      extensions: ["js", "css", "map"],
-    },
+      extensions: broccoliAssetRevDefaults.extensions.concat(["webmanifest"]),
+      prepend: "https://bracke.dk/",
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated

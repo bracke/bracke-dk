@@ -21,8 +21,8 @@ module.exports = function(/* environment, appConfig */) {
       },
       ...[192, 280, 512].map((size) => ({
         src: `/assets/icons/appicon-${size}.png`,
-        sizes: `${size}x${size}`,
-      })),
+        sizes: `${size}x${size}`
+      }))
     ],
     ms: {
       tileColor: "#fff",
