@@ -4,9 +4,20 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
+    "ember-cli-image-transformer": {
+      images: [
+        {
+          inputFilename: "lib/images/Logo.svg",
+          outputFileName: "appicon-",
+          convertTo: "png",
+          destination: "assets/icons/",
+          sizes: [32, 192, 280, 512],
+        },
+      ],
+    },
     fingerprint: {
-      extensions: ['js', 'css', 'map']
-    }
+      extensions: ["js", "css", "map"],
+    },
   });
 
   // Use `app.import` to add additional libraries to the generated
