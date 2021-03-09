@@ -3,7 +3,7 @@
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 const broccoliAssetRevDefaults = require("broccoli-asset-rev/lib/default-options");
 
-module.exports = function(defaults) {
+module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
     "ember-cli-image-transformer": {
       images: [

@@ -6,7 +6,8 @@ export default class Router extends EmberRouter {
   rootURL = config.rootURL;
 }
 
-Router.map(function() {
+Router.map(function () {
+  this.route('tools');
   this.route('apps');
   this.route('ada-developer-tools');
 });

@@ -1,11 +1,11 @@
 'use strict';
 
-module.exports = function(environment) {
+module.exports = function (environment) {
   let ENV = {
-    modulePrefix: "bracke-blog",
+    modulePrefix: 'bracke-blog',
     environment,
-    rootURL: "/",
-    locationType: "auto",
+    rootURL: '/',
+    locationType: 'auto',
 
     EmberENV: {
       FEATURES: {
@@ -24,24 +24,29 @@ module.exports = function(environment) {
     },
 
     blog: {
-      title: "Bracke",
-      description: "The personal blog of Bent Bracke.",
-      coverImage: "/images/blog-cover.jpg",
+      title: 'Bracke',
+      description: 'The personal blog of Bent Bracke.',
+      coverImage: '/images/blog-cover.jpg',
 
       navigation: [
         {
-          label: "Home",
-          route: "index",
+          label: 'Home',
+          route: 'index',
         },
         {
-          label: "Apps",
-          route: "page",
-          id: "apps",
+          label: 'Apps',
+          route: 'page',
+          id: 'apps',
         },
         {
-          label: "Built by Bent Bracke",
-          route: "page",
-          id: "bent-bracke",
+          label: 'Tools',
+          route: 'page',
+          id: 'tools',
+        },
+        {
+          label: 'Built by Bent Bracke',
+          route: 'page',
+          id: 'bent-bracke',
         },
       ],
     },
