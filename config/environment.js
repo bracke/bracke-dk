@@ -32,22 +32,7 @@ module.exports = function (environment) {
         {
           label: 'Home',
           route: 'index'
-        },
-        {
-          label: 'Apps',
-          route: 'apps',
-          id: 'apps'
-        },
-        {
-          label: 'Tools',
-          route: 'tools',
-          id: 'tools'
-        },
-        {
-          label: 'Built by Bent Bracke',
-          route: 'page',
-          id: 'bent-bracke',
-        },
+        }
       ],
     },
   };
