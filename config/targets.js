@@ -11,4 +11,5 @@ const isProduction = process.env.EMBER_ENV === 'production';
 
 module.exports = {
   browsers,
+  node: 'current',
 };
