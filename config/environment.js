@@ -31,14 +31,18 @@ module.exports = function (environment) {
       navigation: [
         {
           label: 'Home',
-          route: 'index',
+          route: 'index'
         },
         {
           label: 'Apps',
-          route: 'page',
-          id: 'apps',
+          route: 'apps',
+          id: 'apps'
         },
-
+        {
+          label: 'Tools',
+          route: 'tools',
+          id: 'tools'
+        },
         {
           label: 'Built by Bent Bracke',
           route: 'page',
