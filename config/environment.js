@@ -25,7 +25,7 @@ module.exports = function (environment) {
 
     blog: {
       title: 'Bracke',
-      description: 'The personal blog of Bent Bracke.',
+      description: 'The personal blog of Bent Bracke',
       coverImage: '/images/blog-cover.jpg',
 
       navigation: [
