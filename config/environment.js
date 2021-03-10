@@ -38,11 +38,7 @@ module.exports = function (environment) {
           route: 'page',
           id: 'apps',
         },
-        {
-          label: 'Tools',
-          route: 'page',
-          id: 'tools',
-        },
+
         {
           label: 'Built by Bent Bracke',
           route: 'page',
